@@ -7,8 +7,8 @@ import {
   MAX_HP, DAMAGE_PER_HIT, HEAL_AMOUNT, AVATAR_COLORS, DAMAGE_ON_DROP, AVATAR_NAMES
 } from '../constants';
 import { 
-  Avatar, GameState, PlayerState, Ball, Brick, 
-  PowerUp, PowerUpType, Vector, Particle 
+  Avatar, PlayerState, Ball, Brick, 
+  PowerUp, PowerUpType, Particle 
 } from '../types';
 
 interface GameCanvasProps {
@@ -420,8 +420,7 @@ const GameCanvas: React.FC<GameCanvasProps> = ({ playerAvatar, onGameOver }) => 
       // Simple Bayan shape
       const w = ball.radius * 2.5;
       const h = ball.radius * 2;
-      const x = ball.pos.x - w/2;
-      const y = ball.pos.y - h/2;
+      // Removed unused x, y variables
 
       ctx.save();
       ctx.translate(ball.pos.x, ball.pos.y);

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Avatar } from '../types';
-import { AVATAR_COLORS, AVATAR_NAMES } from '../constants';
+import { AVATAR_NAMES } from '../constants';
 import { Bird, User, Trophy, Zap } from 'lucide-react';
 
 interface MainMenuProps {
